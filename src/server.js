@@ -1,8 +1,8 @@
 import app from "./app";
 
-const port = 3001;
+const port = process.env.APP_PORT;
 app.listen(port, () => {
   console.log();
   console.log(`Escutando na porta ${port}`);
-  console.log(`CTRL + Clique em http://localhost:${port}`);
+  console.log(`CTRL + Clique em http://${process.env.APP_URL}:${port}`);
 });
