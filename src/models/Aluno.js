@@ -15,5 +15,6 @@ export default class Aluno extends Model {
         sequelize,
       }
     );
+    return this;
   }
 }

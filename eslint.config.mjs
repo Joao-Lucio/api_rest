@@ -16,5 +16,6 @@ module.exports = {
     "no-console": "off",
     "class-methods-use-this": "off",
     "import/fist": "off",
+    "no-param-reassign": "off",
   },
 };
