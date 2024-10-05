@@ -9,7 +9,7 @@ class HomeController {
         ["id", "ASC"],
         [Foto, "id", "ASC"],
       ],
-      include: { model: Foto, attributes: ["filename"] },
+      include: { model: Foto, attributes: ["url", "filename"] },
     });
     res.json(alunos);
   }
@@ -56,7 +56,7 @@ class HomeController {
           ["id", "ASC"],
           [Foto, "id", "ASC"],
         ],
-        include: { model: Foto, attributes: ["filename"] },
+        include: { model: Foto, attributes: ["url", "filename"] },
       });
 
       if (!aluno) {
