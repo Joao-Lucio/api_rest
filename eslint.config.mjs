@@ -17,5 +17,6 @@ module.exports = {
     "class-methods-use-this": "off",
     "import/fist": "off",
     "no-param-reassign": "off",
+    camelcase: "off",
   },
 };
